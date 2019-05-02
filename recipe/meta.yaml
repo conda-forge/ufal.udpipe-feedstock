@@ -1,6 +1,6 @@
 {% set name = "ufal.udpipe" %}
-{% set version = "1.2.0.1" %}
-{% set sha256 = "e24ebb712232d657900aee2b2e25e7ab45726089796dee7a376faf22e619eeb7" %}
+{% set version = "1.2.0.2" %}
+{% set sha256 = "ab905a09ff5c25dfd0d202315e1642d3e1339f3e6cbfeeff4c2c2860491e8b8c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: true  # [win and vc<14]
 
