@@ -1,6 +1,6 @@
 {% set name = "ufal.udpipe" %}
-{% set version = "1.2.0.2" %}
-{% set sha256 = "ab905a09ff5c25dfd0d202315e1642d3e1339f3e6cbfeeff4c2c2860491e8b8c" %}
+{% set version = "1.2.0.3" %}
+{% set sha256 = "ea0a339840c6072a677937dc38cda03455dec0359db468e091a92393309c48cd" %}
 
 package:
   name: {{ name|lower }}
