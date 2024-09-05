@@ -10,13 +10,14 @@ source:
   sha256: 936e2448523c5010c07af45755b9bc1f86f28c7c25af1a510422519568bb8d04
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
